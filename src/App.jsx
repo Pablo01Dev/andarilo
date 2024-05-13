@@ -14,8 +14,6 @@ function App() {
         <Portfolio />
         <ContactArea />
         <Footer />
-        <button onClick={() => setCount(count + 1)}>Incrementar</button>
-        <p>Contagem: {count}</p>
       </div>
     </>
   );
