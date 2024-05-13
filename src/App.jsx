@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+
 import Header from './models/Header';
 import Nav from './models/Nav';
 import Portfolio from './models/Portfolio';
@@ -19,4 +20,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
