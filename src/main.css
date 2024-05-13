@@ -1,0 +1,15 @@
+:root {
+
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    font-family: Basic;
+    font-weight: 500;
+    font-family: Basic;
+
+    --preto: #212121;
+    --fundo: #fff;
+    --cinza: ;
+}
