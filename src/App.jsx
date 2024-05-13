@@ -6,6 +6,8 @@ import Portfolio from './models/Portfolio';
 import ContactArea from './models/Contato';
 import Footer from './models/Footer';
 
+import "./global.css"
+
 function App() {
   return (
     <>
