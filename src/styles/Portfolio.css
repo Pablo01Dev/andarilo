@@ -4,7 +4,7 @@ section {
     align-items: center;
   }
   
-#portfolio div {
+section div {
     margin: 1em 2em;
     width: 20.5em;
     height: 10em;
@@ -13,9 +13,12 @@ section {
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
-  }
+    
+    background-image: url("../src/assets/images/marcenaria.jpeg");
+
+    }
   
-  #portfolio div p {
+  section div p {
     margin: 20px 20px;
   }
   

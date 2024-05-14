@@ -3,9 +3,8 @@ import '../styles/Portfolio.css';
 
 function Portfolio() {
     return (
-        <section id="portfolio">
+        <section>
             <div>
-                <img src="#" />
                 <p>Projeto 1</p>
             </div>
 
