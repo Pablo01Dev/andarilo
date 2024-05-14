@@ -5,17 +5,17 @@ function Portfolio() {
     return (
         <section id="portfolio">
             <div>
-                <img src="#" alt="Descrição do Projeto 1" />
+                <img src="#" />
                 <p>Projeto 1</p>
             </div>
 
             <div>
-                <img src="#" alt="Descrição do Projeto 2" />
+                <img src="#" />
                 <p>Projeto 2</p>
             </div>
 
             <div>
-                <img src="#" alt="Descrição do Projeto 3" />
+                <img src="#" />
                 <p>Projeto 3</p>
             </div>
         </section>

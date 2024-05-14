@@ -1,5 +1,4 @@
 :root {
-
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -12,4 +11,8 @@
     --preto: #212121;
     --fundo: #fff;
     --cinza: ;
+}
+
+body {
+    margin: 0;
 }
