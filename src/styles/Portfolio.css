@@ -1,23 +1,22 @@
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-section div {
-    margin: 1em 2em;
-    width: 20.5em;
-    height: 10em;
-    background-color: rgb(208, 208, 208);
-    color: gray;
-    border-radius: 10px;
-    display: flex;
-    align-items: flex-end;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    }
-  
-  section div p {
-    margin: 20px 20px;
-  }
-  
+section div {
+  margin: 1em 2em;
+  width: 20.5em;
+  height: 10em;
+  background-color: rgb(208, 208, 208);
+  color: gray;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+
+
+}
+
+section div p {
+  margin: 20px 20px;
+}
