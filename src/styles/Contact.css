@@ -37,6 +37,7 @@
 }
 
 .orcamento button {
+    cursor: pointer;
     font-size: 16px;
     background-color: #a8a8a8;
     color: #212121;
@@ -45,7 +46,7 @@
     font-weight: 600;
     padding: 0.5em 0.8em;
     border-radius: 5px;
-    margin: 0 0 1.2em ;
+    margin: 0 0 1.2em;
 }
 
 .numero {
@@ -59,20 +60,29 @@
 }
 
 .redesSociais {
-   display: flex;
-    flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
     width: 12em;
     height: 8em;
     font-size: 20px;
-    margin: 1.2em 0em 0em;
+
 }
 
-.redesSociais button{ 
-    font-size: 1em;
-    color: var(--fundo) ;
+.redesSociais button {
+    cursor: pointer;    
+    gap: 0.4em;
+    margin: .5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    color: var(--fundo);
     background-color: transparent;
     border: 0;
+}
+
+.redesSociais span {
+    font-size: 18px;
 }

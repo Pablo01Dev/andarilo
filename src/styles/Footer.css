@@ -5,4 +5,10 @@ footer {
     justify-content: center;
     display: flex;
   }
+
+  footer p{
+    margin: 0.5em 0;
+
+  }
+  
   
