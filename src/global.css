@@ -5,12 +5,14 @@
     display: flex;
     justify-content: center;
     font-family: Basic;
-    font-weight: 500;
+    font-weight: 300;
     font-family: Basic;
 
     --preto: #212121;
     --fundo: #fff;
     --cinza: ;
+    --texto:  font-weight: 300;
+    --titulo:  font-weight: 500;
 }
 
 body {

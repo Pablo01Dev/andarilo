@@ -4,13 +4,14 @@ import Header from '../models/Header';
 import Footer from '../models/Footer';
 import Contact from '../models/Contact';
 import Nav from '../models/Nav';
+import QuemSomos from '../models/QuemSomos';
 
 function Home() {
   return (
     <div>
       <Header />
-      <Nav />
       <Cards />
+      <QuemSomos />
       <Contact />
       <Footer />
     </div>
