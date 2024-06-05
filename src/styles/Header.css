@@ -55,27 +55,46 @@ nav button {
 }
 
 @media (min-width: 1024px) {
-  header {
+  .container {
+    margin:  4em auto 0 auto;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    max-width: 60%;
+  }
+  
+  .image-container, .text-container, .nav-container {
+    flex-basis: 33.33%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    margin-top: 4em;
   }
   
-  header img {
-    margin: 0 4em 0 0 ;
-    max-width: 7em;
-  }
-
-  header p {
-    margin: 0 0 0 2em;
+  .image-container img {
+    max-width: 7em; /* Ajuste o tamanho da imagem conforme necessário */
+    margin: 0;
   }
   
-  nav {
-    display: flex;
+  .text-container {
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-}
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 2em; /* Ajuste conforme necessário */
+  }
+
+  #fontLogo {
+    text-align: left;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2em; /* Ajuste conforme necessário */
+  }
+
+  nav button {
+    margin: 0.5em 0; /* Ajusta o espaçamento dos botões */
+  }
 }

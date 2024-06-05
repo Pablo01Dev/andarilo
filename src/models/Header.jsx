@@ -5,19 +5,25 @@ import siteLogo from '../assets/images/animation.gif';
 function Header() {
     console.log('Header renderizado');
     return (
-        <div>
-            <header>
+        <div className="container">
+            <div className="image-container">
                 <img src={siteLogo} alt="andarilo" />
-                <div id="fontLogo">
-                    <h1>Andarilo</h1>
-                    <h2>studio</h2>
-                </div>
-            </header>
-            <nav>
-                <button>Portfólio</button>
-                <button>Quem é esse?</button>
-                <button>Contato</button>
-            </nav>
+            </div>
+            <div className="text-container">
+                <header>
+                    <div id="fontLogo">
+                        <h1>Andarilo</h1>
+                        <h2>studio</h2>
+                    </div>
+                </header>
+            </div>
+            <div className="nav-container">
+                <nav>
+                    <button>Portfólio</button>
+                    <button>Quem é esse?</button>
+                    <button>Contato</button>
+                </nav>
+            </div>
         </div>
     );
 }
