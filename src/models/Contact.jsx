@@ -17,7 +17,7 @@ function Contact() {
 
                     <div className='info'>
                         <p className="numero">21 96948-7301</p>
-                        <span className="email">pabloguimadesigner@gmail.com</span>
+                        <span className="email">andarilo.st@gmail.com</span>
 
                         <div className='redesSociais'>
                             <a href="https://wa.me/+5521969487301" target="_blank" rel="noopener noreferrer">

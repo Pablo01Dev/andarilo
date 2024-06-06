@@ -106,6 +106,9 @@
         margin: 0;
     }
 
+    .email {
+        margin: 1em 0 1em;
+    }
 
     .contactContent {
         gap: 4em;
@@ -116,6 +119,7 @@
         align-items: center;
         margin: 0 auto;
         flex-direction: row;
+        
     }
 
     .baseContato {
@@ -128,16 +132,32 @@
 
     .contatoContainer  {
         width: 60%;
-        height: 28em;
+        height: 22.5em;
         padding: 2em 0 1em 0;
-        
+        margin: 4em 0 8em 0;
         flex-direction: column;
         
         border-radius: 10px;
         font-size: 16px;
 
-        color: #ffff;
+        color: #1B1B1B;
         background-color: var(--cinza);
     }
 
+    .contatoContainer h2 {
+        margin: 1.5em 0 1.5em;
+    }
+
+    .orcamento {
+       background-color: #212121;
+       color: white;
+    }
+
+    .info {
+        color: #212121;
+    }
+
+    .redesSociais button {
+        color: #212121;
+    }
 }
