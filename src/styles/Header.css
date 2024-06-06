@@ -1,3 +1,7 @@
+.container {
+  background-color: var(--branco);
+}
+
 #fontLogo h1 {
   text-align: center;
   font-family: Kanit, sans-serif;
@@ -16,7 +20,7 @@
   padding: 0;
 }
 
-header img {
+.image-container img {
   margin: 2em auto auto;
   display: block;
   max-width: 8em;
@@ -50,13 +54,14 @@ nav button {
   font-family: Basic;
   font-weight: 800;
   border: 0;
-  padding: 1em 1.1em 1em 1.1em;
+  padding: 1em 1em 1em 1em;
   border-radius: 6px;
+  background-color: var(--cinza);
 }
 
 @media (min-width: 1024px) {
   .container {
-    margin:  4em auto 0 auto;
+    margin:  10em auto 10em auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

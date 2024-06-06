@@ -4,28 +4,30 @@ import { FaBehance, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function Contact() {
     return (
-        <section>
+        <section className="baseContato">
             <div className="contatoContainer">
                 <h2>Contato</h2>
+                <div className="contactContent">
+                    <div className="orcamento">
+                        <p>Quer fazer um<br />orçamento?</p>
+                        <a href="https://wa.me/+5521969487301" target="_blank" rel="noopener noreferrer">
+                            <button>Solicitar orçamento</button>
+                        </a>
+                    </div>
 
-                <div className="orcamento">
-                    <p>Quer fazer um<br />orçamento?</p>
-                    <a href="https://wa.me/+5521969487301" target="_blank" rel="noopener noreferrer">
-                        <button>Solicitar orçamento</button>
-                    </a>
+                    <div className='info'>
+                        <p className="numero">21 96948-7301</p>
+                        <span className="email">pabloguimadesigner@gmail.com</span>
 
-                </div>
-
-                <p className="numero">21 96948-7301</p>
-                <span className="email">pabloguimadesigner@gmail.com</span>
-
-                <div className='redesSociais'>
-                    <a href="https://wa.me/+5521969487301" target="_blank" rel="noopener noreferrer">
-                        <button type='button'><FaWhatsapp /></button>
-                    </a>
-                    <a href="https://www.instagram.com/andarilo.st" target="_blank" rel="noopener noreferrer">
-                        <button type='button'><FaInstagram /></button>
-                    </a>
+                        <div className='redesSociais'>
+                            <a href="https://wa.me/+5521969487301" target="_blank" rel="noopener noreferrer">
+                                <button type='button'><FaWhatsapp /></button>
+                            </a>
+                            <a href="https://www.instagram.com/andarilo.st" target="_blank" rel="noopener noreferrer">
+                                <button type='button'><FaInstagram /></button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
 

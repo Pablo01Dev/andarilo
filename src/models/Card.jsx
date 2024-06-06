@@ -4,7 +4,7 @@ import '../styles/Card.css';
 
 function Card({ fundo, titulo }) {
     return (
-        <section>
+        <section className="baseCard">
             <div className="background" style={{ backgroundImage: `url(${fundo})` }}>
                 <p>{titulo}</p>
             </div>

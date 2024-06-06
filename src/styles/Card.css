@@ -21,5 +21,13 @@ section div {
 }
 
 p {
-  margin: 0 0 1em 2em ;
+  margin: 0 0 1em 2em;
+}
+
+@media (min-width: 1024px) {
+  .baseCard {
+      flex-direction: row;
+  }
+
+
 }

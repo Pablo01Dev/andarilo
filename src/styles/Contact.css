@@ -70,7 +70,7 @@
 }
 
 .redesSociais button {
-    cursor: pointer;    
+    cursor: pointer;
     gap: 0.4em;
     margin: .5em 0;
     display: flex;
@@ -84,4 +84,60 @@
 
 .redesSociais span {
     font-size: 18px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+
+    .redesSociais {
+        width: 1em;
+        height: 2em;
+        margin: 0;
+
+    }
+
+    .info {
+        margin: 0;
+    }
+
+
+    .contactContent {
+        gap: 4em;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    .baseContato {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+
+    }
+
+    .contatoContainer  {
+        width: 60%;
+        height: 28em;
+        padding: 2em 0 1em 0;
+        
+        flex-direction: column;
+        
+        border-radius: 10px;
+        font-size: 16px;
+
+        color: #ffff;
+        background-color: var(--cinza);
+    }
+
 }
