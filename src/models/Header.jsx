@@ -12,7 +12,7 @@ function Header() {
                 </div>
 
                 <div className="line-animate">
-                    <img src={lineAnimate} alt="linha animada" />
+                    <img src={lineAnimate} />
                 </div>
 
                 <div className="text-container">

@@ -17,6 +17,15 @@
   flex-direction: column;
 }
 
+.line-animate {
+  width: 100%;
+}
+.line-animate img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  margin: auto;
+}
 
 #fontLogo h2 {
   text-align: center;
@@ -28,7 +37,7 @@
 }
 
 .image-container img {
-  margin: 2em auto -11em;
+  margin: 2em auto -12.5em;
   display: flex;
   max-width: 8em;
   z-index: 1;
@@ -109,14 +118,13 @@ nav button {
     background-color: #1B1B1B;
   }
 
-  .line-animate {
-    width: 100vw; 
+  .line-animate img{
+    width: 100%; 
     display: flex; 
-    margin: 0 auto;
     justify-content: center;
   }
   .image-container img {
-    margin: 2em auto -11em;
+    margin: 2em auto -12em;
     display: block;
     max-width: 8em;
     z-index: 1;
