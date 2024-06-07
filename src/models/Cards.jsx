@@ -10,7 +10,6 @@ import '../styles/Cards.css';
 function Cards() {
     return (
         <div className="portfolio">
-            <h2>Portfólio</h2>
             <div className="cards">
                 <Card fundo={Image1} titulo="Identidade Visual" />
                 <Card fundo={Image2} titulo="Website" />

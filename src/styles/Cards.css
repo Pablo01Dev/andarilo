@@ -6,17 +6,12 @@
     max-width: 100%;
 }
 
-.portfolio h2 {
-    color: var(--cor-fundo);
-    font-weight: 300;
-    font-size: 1.4em;
-}
 .portfolio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 1em 0 4em 0;
+    padding: 1em 0 2em 0;
 }
 
 
@@ -33,13 +28,9 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding: 1.5em 0 8.4em;
+        padding: 8em 0 8em;
     }
 
-    .portfolio h2 {
-        margin: 2.5em 0;
-        font-size: 1.7em;
-    }
 
 }
 

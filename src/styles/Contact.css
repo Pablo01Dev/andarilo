@@ -1,7 +1,7 @@
 .contatoContainer {
     width: 20.5em;
-    height: 28em;
-    margin: 1em 0 2em;
+    height: 30em;
+    margin: 1em 0 1em;
     padding: 2em 0 1em;
     display: flex;
     flex-direction: column;
@@ -147,7 +147,7 @@
         width: 69.8%;
         height: 22.5em;
         padding: 2em 0 1em;
-        margin: 4em 0 8em;
+        margin: 0 0 4em;
         flex-direction: column;
         border-radius: var(--border-radius);
         font-size: var(--tamanho-base);

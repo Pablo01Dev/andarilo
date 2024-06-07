@@ -6,8 +6,8 @@
 }
 .Corpo {
     width: 20.5em;
-    height: 40em;
-    margin: 2em auto;
+    height: 46em;
+    margin: 0em auto;
     padding: 2em 0 1em 0;
     display: flex;
     flex-direction: column;
@@ -21,31 +21,31 @@
     font-weight: var(--texto);
 }
 
-.Fundo h2 {
-    color: var(--cor-fundo);
+.Corpo h2 {
+    color: var(--fundo-claro);
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: 1.7em;
+    margin: 2em 0;
 }
 
-.Corpo img {
+.personContent img {
     width: 70%;
     height: auto;
     max-height: 100%;
     border-radius: 10px;
 }
 
-.Corpo p {
+.personContent p {
     font-weight: 300;
     display: flex;
     justify-content: center;
     text-align: start;
-    margin: 2em 2.5em;
+    margin: 2em 2.5em 5em 2.5em ;
     font-size: 15px;
 }
 
 @media (min-width: 1024px) {
     .Fundo {
-
         height: 45em;
         padding-top: 2em ;
         align-items: center;
@@ -54,37 +54,43 @@
     }
 
     .Corpo {
-        padding: 4em 0 6em 0;
+        padding: 4em 0 1em 0;
         flex-direction: column;
         width: 70%;
         height: auto; /* Ajuste para altura automática */
-    }
-
-    .Corpo {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;   
-        /* Espaçamento entre h2 e o conteúdo */
     }
 
-    .Fundo h2 {
+    .Corpo h2 {
         font-size: 1.7em;
         font-weight: 300;
-        margin: .5em 0 2em; /* Espaçamento inferior para h2 */
+        margin: .5em 0 2    em; 
+        color: var(--fundo-claro);
     }
 
-    .Corpo img {
-        margin: 0 0 0 4em;
+    .personContent {
+        display: flex;
+        flex-direction: row;
+        padding: 0 0 4em;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .personContent img {
         width: 25%;
         height: auto;
         border-radius: 10px;
-        max-height: none; /* Removendo o limite de altura máxima */
+        max-height: none; 
+        margin-left: 2em;
     }
 
-    .Corpo p {
+    .personContent p {
         width: 30em;
-        height: auto; /* Ajuste para altura automática */
+        height: auto;
         text-align: start;
         font-size: 18px;
     }
