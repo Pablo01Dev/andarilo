@@ -1,6 +1,12 @@
+.Fundo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
 .Corpo {
     width: 20.5em;
-    height: 37em;
+    height: 40em;
     margin: 2em auto;
     padding: 2em 0 1em 0;
     display: flex;
@@ -13,6 +19,12 @@
     color: #ffff;
     background-color: #212121;
     font-weight: var(--texto);
+}
+
+.Fundo h2 {
+    color: var(--cor-fundo);
+    font-weight: 300;
+    font-size: 1.4em;
 }
 
 .Corpo img {
@@ -33,30 +45,52 @@
 
 @media (min-width: 1024px) {
     .Fundo {
-        background-color: rgb(27, 27, 27);
-        height: 40em;
+
+        height: 45em;
+        padding-top: 2em ;
         align-items: center;
         justify-content: center;
         display: flex;
     }
+
     .Corpo {
-        margin: 4em 0 0 0   ;
-        flex-direction: row;
+        padding: 4em 0 6em 0;
+        flex-direction: column;
         width: 70%;
-        height: 28em;
+        height: auto; /* Ajuste para altura automática */
+    }
+
+    .Corpo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;   
+        /* Espaçamento entre h2 e o conteúdo */
+    }
+
+    .Fundo h2 {
+        font-size: 1.7em;
+        font-weight: 300;
+        margin: .5em 0 2em; /* Espaçamento inferior para h2 */
     }
 
     .Corpo img {
+        margin: 0 0 0 4em;
         width: 25%;
+        height: auto;
         border-radius: 10px;
-        margin: 0 0 0 6em;
+        max-height: none; /* Removendo o limite de altura máxima */
     }
-
 
     .Corpo p {
         width: 30em;
-        height: 20em;
-        align-items: center;
+        height: auto; /* Ajuste para altura automática */
+        text-align: start;
         font-size: 18px;
+    }
+    .Fundo {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 }

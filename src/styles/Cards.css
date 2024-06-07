@@ -6,12 +6,40 @@
     max-width: 100%;
 }
 
+.portfolio h2 {
+    color: var(--cor-fundo);
+    font-weight: 300;
+    font-size: 1.4em;
+}
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1em 0 4em 0;
+}
+
+
 @media (min-width: 1024px) {
     .cards {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        padding: 10em 0 10em 0;
         background-color: var(--letra);
     }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 1.5em 0 8.4em;
+    }
+
+    .portfolio h2 {
+        margin: 2.5em 0;
+        font-size: 1.7em;
+    }
+
 }
+

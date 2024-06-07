@@ -11,10 +11,16 @@
     font-size: var(--tamanho-base);
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
+
+}
+
+.contatoContainer h2 {
+    font-weight: 300;
+    font-size: 1.7em;
 }
 
 .contactContent {
-    background-color: var( --cor-fundo);
+    background-color: var(--cor-fundo);
 }
 
 .contatoContainer h2 {
@@ -137,7 +143,7 @@
         margin: 0 auto;
     }
 
-    .contatoContainer  {
+    .contatoContainer {
         width: 69.8%;
         height: 22.5em;
         padding: 2em 0 1em;
@@ -158,7 +164,7 @@
         color: white;
     }
 
-    .info{
+    .info {
         gap: .7em;
         color: var(--cor-fundo);
     }

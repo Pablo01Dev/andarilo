@@ -1,4 +1,3 @@
-
 .container {
   background-color: var(--fundo-claro);
 }
@@ -12,21 +11,6 @@
   padding: 0;
 }
 
-.image-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.line-animate {
-  width: 100%;
-}
-.line-animate img {
-  width: 100%;
-  height: 150px; 
-  object-fit: cover;
-  margin: auto 0;
-}
-
 #fontLogo h2 {
   text-align: center;
   font-family: Kanit, sans-serif;
@@ -36,11 +20,28 @@
   padding: 0;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
 .image-container img {
+  max-width: 8em;
   margin: 2em auto -10em;
   display: flex;
-  max-width: 8em;
   z-index: 1;
+}
+
+.line-animate {
+  width: 100%;
+}
+
+.line-animate img {
+  width: 100%;
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin: auto 0;
 }
 
 header {
@@ -51,9 +52,8 @@ header {
   margin: auto;
   width: 100%;
   position: relative;
-  overflow: hidden; /* Esconde o conteúdo que ultrapassa a largura do header */
+  overflow: hidden; 
 }
-
 
 header p {
   font-size: 1.2em;
@@ -80,56 +80,43 @@ nav button {
   background-color: var(--cinza);
 }
 
-
-
 @media (min-width: 1024px) {
   .container {
     margin: 8em auto 4em auto;
     max-width: 100%;
   }
 
-  .image-container, .text-container {
+  .content-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-  }
-
-  .image-container img {
-    max-width: 7em;
   }
 
   .text-container {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: left;
-    padding: 0 2em;
+    order: 1; 
   }
 
-  #fontLogo {
-    text-align: left;
+  .image-container {
+    order: 3; 
+    margin-top: 1em; 
   }
 
-  nav button {
-    margin: 0 0.5em;
+  .line-animate {
+    order: 4; 
   }
 
-  .baseContato {
-    background-color: #1B1B1B;
-  }
-
-  .line-animate img{
-    width: 100%; 
-    display: flex; 
+  .line-animate img {
+    width: 100%;
+    display: flex;
     justify-content: center;
   }
-  .image-container img {
-    margin: 2em auto -12em;
-    display: block;
-    max-width: 8em;
-    z-index: 1;
-  }
-  
 
-  
+  .nav-container {
+    order: 2;
+    width: 100%;
+    margin-top: 4em;
+  }
 }

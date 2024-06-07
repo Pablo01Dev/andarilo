@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Header.css';
 import siteLogo from '../assets/images/animation.gif';
 import lineAnimate from '../assets/images/floor.gif';
+
 function Header() {
     console.log('Header renderizado');
     return (
@@ -10,9 +11,9 @@ function Header() {
                 <div className="image-container">
                     <img src={siteLogo} alt="andarilo" />
                 </div>
-
+                
                 <div className="line-animate">
-                    <img src={lineAnimate} />
+                    <img src={lineAnimate} alt="linha animada" />
                 </div>
 
                 <div className="text-container">
