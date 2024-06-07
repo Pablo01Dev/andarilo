@@ -7,12 +7,21 @@
     font-family: Basic;
     font-weight: 300;
     font-family: Basic;
+    background-color: var(--fundo-claro);
 
-    --preto: #212121;
-    --fundo: #fff;
+
     --cinza: #dbdbdb;
     --texto:  font-weight: 300;
     --titulo:  font-weight: 500;
+
+    --cor-fundo: #212121;
+    --fundo-claro: #fcfcff;
+    --cor-texto: #ffffff;
+    --cor-destaque: #e7e7e7;
+    --cor-botao: #a8a8a8;
+    --cor-cinza: var(--cor-texto);
+    --tamanho-base: 16px;
+    --border-radius: 10px;
 }
 
 body {

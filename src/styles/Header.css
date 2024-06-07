@@ -1,5 +1,6 @@
+
 .container {
-  background-color: var(--branco);
+  background-color: var(--fundo-claro);
 }
 
 #fontLogo h1 {
@@ -11,6 +12,12 @@
   padding: 0;
 }
 
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
 #fontLogo h2 {
   text-align: center;
   font-family: Kanit, sans-serif;
@@ -21,9 +28,10 @@
 }
 
 .image-container img {
-  margin: 2em auto auto;
-  display: block;
+  margin: 2em auto -11em;
+  display: flex;
   max-width: 8em;
+  z-index: 1;
 }
 
 header {
@@ -32,7 +40,11 @@ header {
   align-items: center;
   text-align: center;
   margin: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa a largura do header */
 }
+
 
 header p {
   font-size: 1.2em;
@@ -59,31 +71,28 @@ nav button {
   background-color: var(--cinza);
 }
 
+
+
 @media (min-width: 1024px) {
   .container {
-    margin:  12em auto 12em auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 60%;
+    margin: 8em auto 4em auto;
+    max-width: 100%;
   }
-  
-  .image-container, .text-container, .nav-container {
-    flex-basis: 33.33%;
+
+  .image-container, .text-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .image-container img {
-    max-width: 7em; 
-    margin: 0;
+    max-width: 7em;
   }
-  
+
   .text-container {
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-align: left;
     padding: 0 2em;
   }
@@ -92,20 +101,27 @@ nav button {
     text-align: left;
   }
 
-  nav {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 2em; 
-  }
-
   nav button {
-    margin: 0.5em 0; 
+    margin: 0 0.5em;
   }
 
   .baseContato {
     background-color: #1B1B1B;
   }
 
+  .line-animate {
+    width: 100vw; 
+    display: flex; 
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .image-container img {
+    margin: 2em auto -11em;
+    display: block;
+    max-width: 8em;
+    z-index: 1;
+  }
+  
 
+  
 }
