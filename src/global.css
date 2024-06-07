@@ -2,12 +2,12 @@
     display: flex;
     margin: auto;
     flex-direction: column;
-    display: flex;
     justify-content: center;
     font-family: Basic;
     font-weight: 300;
     font-family: Basic;
     background-color: var(--fundo-claro);
+    align-items: center;
 
 
     --cinza: #dbdbdb;

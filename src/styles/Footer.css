@@ -1,14 +1,14 @@
 footer {
-    display: flex;
-    background-color: gray;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
+  width: 100%;
+  display: flex;
+  background-color: gray;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 
-  footer p{
-    margin: 0.5em 0;
+}
 
-  }
+footer p {
+  margin: 0.5em 0;
   
-  
+}

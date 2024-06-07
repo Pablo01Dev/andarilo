@@ -27,7 +27,7 @@ function Header() {
             <div className="nav-container">
                 <nav>
                     <button>Portfólio</button>
-                    <button>Quem é esse?</button>
+                    <button>Quem sou?</button>
                     <button>Contato</button>
                 </nav>
             </div>
