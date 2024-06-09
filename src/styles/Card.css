@@ -5,7 +5,7 @@ section {
 }
 
 section div {
-  margin: 1em 2em;
+  margin: 1em 2em; 
   width: 20.5em;
   height: 12em;
   color: rgb(255, 255, 255);
@@ -26,8 +26,12 @@ p {
 
 @media (min-width: 1024px) {
   .baseCard {
-      flex-direction: row;
+    flex-direction: row;
+    margin: 0;
   }
 
-
+  section div {
+    height: 12em;
+    margin: 0.3em 0.6em; 
+  }
 }
