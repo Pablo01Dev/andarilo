@@ -8,8 +8,8 @@ function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/andarilo" element={<Home />} />
+                <Route path="/andarilo/portfolio" element={<Portfolio />} />
                 <Route path="*" element={<p>Not Found</p>} />
             </Routes>
         </BrowserRouter>
