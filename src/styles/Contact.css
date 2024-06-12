@@ -11,7 +11,16 @@
     font-size: var(--tamanho-base);
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
+    transform: translateY(4em);
+    opacity: 0;
+    transition: opacity 1.2s, transform 2s;
 
+}
+
+
+.contatoContainer.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .contatoContainer h2 {

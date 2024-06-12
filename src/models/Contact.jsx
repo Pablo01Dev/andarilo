@@ -1,11 +1,16 @@
 import React from 'react';
 import '../styles/Contact.css';
+import { useInView } from 'react-intersection-observer';
 import { FaBehance, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function Contact() {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
     return (
         <section className="baseContato">
-            <div className="contatoContainer">
+                <div ref={ref} className={`contatoContainer ${inView ? 'visible' : ''}`}>
                 <h2>Contato</h2>
                 <div className="contactContent">
                     <div className="orcamento">
@@ -32,7 +37,7 @@ function Contact() {
 
 
             </div>
-        </section>
+        </section >
     );
 }
 

@@ -1,9 +1,10 @@
+
 .Fundo {
     text-align: center;
     display: flex;
     flex-direction: column;
-    
 }
+
 .Corpo {
     width: 20.5em;
     height: 46em;
@@ -16,9 +17,17 @@
     text-align: center;
     border-radius: 10px;
     font-size: 16px;
-    color: #ffff;
+    color: #fff;
     background-color: #212121;
     font-weight: var(--texto);
+    opacity: 0;
+    transform: translateY(4em);
+    transition: opacity 1.2s, transform 2s;
+}
+
+.Corpo.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .Corpo h2 {
@@ -26,6 +35,12 @@
     font-weight: 300;
     font-size: 1.7em;
     margin: 2em 0;
+}
+
+.personContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .personContent img {
@@ -40,14 +55,14 @@
     display: flex;
     justify-content: center;
     text-align: start;
-    margin: 2em 2.5em 5em 2.5em ;
+    margin: 2em 2.5em 5em 2.5em;
     font-size: 15px;
 }
 
 @media (min-width: 1024px) {
     .Fundo {
         height: 45em;
-        padding-top: 2em ;
+        padding-top: 2em;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -57,17 +72,16 @@
         padding: 4em 0 1em 0;
         flex-direction: column;
         width: 70%;
-        height: auto; /* Ajuste para altura automática */
+        height: auto;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;   
+        align-items: center;
     }
 
     .Corpo h2 {
         font-size: 1.7em;
         font-weight: 300;
-        margin: .5em 0 2    em; 
+        margin: .5em 0 2em;
         color: var(--fundo-claro);
     }
 
@@ -77,14 +91,13 @@
         padding: 0 0 4em;
         justify-content: center;
         align-items: center;
-        
     }
 
     .personContent img {
         width: 25%;
         height: auto;
         border-radius: 10px;
-        max-height: none; 
+        max-height: none;
         margin-left: 2em;
     }
 
@@ -93,10 +106,5 @@
         height: auto;
         text-align: start;
         font-size: 18px;
-    }
-    .Fundo {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
     }
 }

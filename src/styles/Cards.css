@@ -4,7 +4,15 @@
     align-items: center;
     margin: 0 auto;
     max-width: 100%;
-}
+    opacity: 0;
+    transform: translateY(4em);
+    transition: opacity 1.2s, transform 2s;
+  }
+  
+  .cards.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .portfolio {
     display: flex;
@@ -12,8 +20,20 @@
     justify-content: center;
     text-align: center;
     padding: 1em 0 2em 0;
+
 }
 
+@keyframes fadeUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 @media (min-width: 1024px) {
     .cards {
@@ -34,4 +54,3 @@
 
 
 }
-
