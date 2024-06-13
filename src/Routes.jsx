@@ -2,14 +2,18 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React from 'react';
 
 import Home from './routes/Home';
-import Portfolio from './routes/Portfolio';
+import IdentidadeVisual from './routes/IdentidadeVisual';
+import Website from './routes/Website';
+import Outros from './routes/Outros';
 
 function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/andarilo" element={<Home />} />
-                <Route path="/andarilo/portfolio" element={<Portfolio />} />
+                <Route path="/andarilo/identidade-visual" element={<IdentidadeVisual />} />
+                <Route path="/andarilo/website" element={<Website />} />
+                <Route path="/andarilo/outros" element={<Outros />} />
                 <Route path="*" element={<p>Not Found</p>} />
             </Routes>
         </BrowserRouter>

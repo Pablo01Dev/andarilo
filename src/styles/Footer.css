@@ -1,7 +1,6 @@
 footer {
   width: 100%;
   display: flex;
-  background-color: gray;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -9,6 +8,6 @@ footer {
 }
 
 footer p {
-  margin: 0.5em 0;
+  margin: 2em 0;
   
 }

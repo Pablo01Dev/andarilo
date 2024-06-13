@@ -2,13 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/Card.css';
 
-function Card({ fundo, titulo }) {
+function Card({ fundo, titulo, page }) {
     return (
-        <section className="baseCard">
-            <div className="background" style={{ backgroundImage: `url(${fundo})` }}>
-                <p>{titulo}</p>
-            </div>
-        </section>
+        <div className="baseCard">
+            <a href={page}>
+                <div className="background" style={{ backgroundImage: `url(${fundo})` }}>
+                    <p>{titulo}</p>
+                </div>
+            </a>
+        </div>
     );
 }
 

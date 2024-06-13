@@ -1,20 +1,17 @@
-section {
+.baseCard {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-section div {
-  margin: 1em 2em; 
-  width: 20.5em;
-  height: 12em;
+.background {
+  margin: 0.5em;
+  width: 18em;
+  height: 10em;
   color: rgb(255, 255, 255);
   border-radius: 10px;
   display: flex;
   align-items: flex-end;
-}
-
-.background {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -27,11 +24,11 @@ p {
 @media (min-width: 1024px) {
   .baseCard {
     flex-direction: row;
-    margin: 0;
+    width: 60%;
   }
 
-  section div {
-    height: 12em;
-    margin: 0.3em 0.6em; 
+  .background {
+      height: 12em;
+    margin: 0.3em 0.6em;
   }
 }

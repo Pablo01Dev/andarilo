@@ -9,7 +9,7 @@ function Contact() {
         threshold: 0.1,
     });
     return (
-        <section className="baseContato">
+        <div className="baseContato">
                 <div ref={ref} className={`contatoContainer ${inView ? 'visible' : ''}`}>
                 <h2>Contato</h2>
                 <div className="contactContent">
@@ -37,7 +37,7 @@ function Contact() {
 
 
             </div>
-        </section >
+        </div >
     );
 }
 

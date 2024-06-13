@@ -1,7 +1,17 @@
+.baseContato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 1em;
+
+}
+
 .contatoContainer {
+    justify-content: center;
     width: 20.5em;
     height: 30em;
-    margin: 1em 0 1em;
+    margin: 0 auto;
     padding: 2em 0 1em;
     display: flex;
     flex-direction: column;
@@ -26,15 +36,9 @@
 .contatoContainer h2 {
     font-weight: 300;
     font-size: 1.7em;
+    margin: 1.5em 0 .5em 0;
 }
 
-.contactContent {
-    background-color: var(--cor-fundo);
-}
-
-.contatoContainer h2 {
-    margin: 1em 2em;
-}
 
 .contactContent,
 .orcamento {
@@ -45,7 +49,7 @@
 }
 
 .contactContent {
-    margin: 7em auto;
+    margin: 0em auto;
     background-color: var(--cor-fund);
 }
 
@@ -97,7 +101,7 @@
 
 .redesSociais button {
     cursor: pointer;
-    gap: 0.4em;
+    gap: 0em;
     margin: 0.5em 0;
     display: flex;
     align-items: center;
@@ -121,8 +125,10 @@
 
 @media (min-width: 1024px) {
 
+    .baseContato {
+        margin: 0;
 
-
+    }
     .redesSociais {
         width: 1em;
         height: 2em;
@@ -135,7 +141,7 @@
     }
 
     .contactContent {
-        gap: 4em;
+        gap: 10em;
         width: 100%;
         height: auto;
         display: flex;
@@ -145,19 +151,17 @@
         margin: 0 auto;
     }
 
-    .baseContato {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-    }
-
     .contatoContainer {
-        width: 69.8%;
+        width: 70%;
         height: 22.5em;
-        padding: 2em 0 1em;
-        margin: 0 0 4em;
+
+        padding: 2em 0;
+        margin: 0 0 2em;
+
+        display: flex;
+        justify-content: center;
         flex-direction: column;
+
         border-radius: var(--border-radius);
         font-size: var(--tamanho-base);
         color: #1B1B1B;
