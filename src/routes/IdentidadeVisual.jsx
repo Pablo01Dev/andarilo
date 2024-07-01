@@ -7,6 +7,7 @@ import '../styles/IdentidadeVisual.css';
 import Contact from '../models/Contact';
 import Footer from '../models/Footer';
 import { Element } from 'react-scroll';
+
 function IdentidadeVisual() {
   return (
     <div>
