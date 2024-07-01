@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.baseCard a {
+  text-decoration: none;
+}
+
 .background {
   margin: 0.5em;
   width: 18em;

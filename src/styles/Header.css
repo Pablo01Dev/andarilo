@@ -9,6 +9,7 @@
   font-size: 4em;
   margin: 0;
   padding: 0;
+  animation: fade-in 1.5s;
 }
 
 #fontLogo h2 {
@@ -16,13 +17,20 @@
   font-family: Kanit, sans-serif;
   font-weight: 500;
   font-size: 2em;
-  margin: 0;
-  padding: 0;
+  margin: -15px 0 0 0; 
+  animation: fade-in 1.5s;
+}
+
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .image-container {
   display: flex;
   justify-content: center;
+
 }
 
 .image-container img {
@@ -30,10 +38,14 @@
   margin: 2em auto -10em;
   display: flex;
   z-index: 1;
+  opacity: 0;
+  animation: fade-in 1.3s ease-in 0.3s forwards;
 }
 
 .line-animate {
   width: 100%;
+  opacity: 0;
+  animation: fade-in 1.3s ease-in 0.5s forwards;
 }
 
 .line-animate img {
@@ -42,6 +54,8 @@
   height: 150px;
   object-fit: cover;
   margin: auto 0;
+
+
 }
 
 header {
@@ -52,7 +66,7 @@ header {
   margin: auto;
   width: 100%;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 header p {
@@ -66,6 +80,8 @@ nav {
   justify-content: center;
   align-items: center;
   margin: 1em 1.2em;
+  opacity: 0;
+  animation: fade-in 1s ease-in 1s forwards;
 }
 
 nav button {
@@ -96,27 +112,29 @@ nav button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    order: 1; 
+    order: 1;
   }
 
   .image-container {
-    order: 3; 
-    margin-top: 1em; 
+    order: 3;
+    margin-top: 1em;
   }
 
   .line-animate {
-    order: 4; 
+    order: 4;
   }
 
   .line-animate img {
     width: 100%;
     display: flex;
     justify-content: center;
+    animation: fade-in 1s;
   }
 
   .nav-container {
     order: 2;
     width: 100%;
     margin: 4em 0;
+
   }
 }

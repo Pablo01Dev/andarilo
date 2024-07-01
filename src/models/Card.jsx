@@ -17,6 +17,7 @@ function Card({ fundo, titulo, page }) {
 Card.propTypes = {
     fundo: PropTypes.string.isRequired,
     titulo: PropTypes.string.isRequired,
+    page: PropTypes.string.isRequired,
 };
 
 export default Card;

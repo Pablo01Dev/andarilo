@@ -28,13 +28,13 @@ function Header() {
             </div>
             <div className="nav-container">
                 <nav>
-                    <Link to="portfolio" spy={true} smooth={true} duration={500}>
+                    <Link to="portfolio" spy={true} smooth={true} offset={-80} duration={500}>
                         <button>Portfólio</button>
                     </Link>
-                    <Link to="about" spy={true} smooth={true} duration={500}>
+                    <Link to="about" spy={true} smooth={true} offset={-80} duration={500}>
                         <button>Quem sou?</button>
                     </Link>
-                    <Link to="contact" spy={true} smooth={true} duration={500}>
+                    <Link to="contact" spy={true} smooth={true} offset={-80} duration={500}>
                         <button>Contato</button>
                     </Link>
                 </nav>

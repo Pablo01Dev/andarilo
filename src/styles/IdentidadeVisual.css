@@ -1,0 +1,24 @@
+/* Estilo padrão */
+.ConteinerProjetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 9em;
+
+}
+
+.Projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 3em 0;
+}
+
+#titulo {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin: 3em 2em;
+}
