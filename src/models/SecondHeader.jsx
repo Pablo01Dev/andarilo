@@ -13,7 +13,7 @@ function SecondHeader() {
     return (
         <div className='HeaderBar'>
             <div className='Logo'>
-                <a href="/">
+                <a href="https://pablo01dev.github.io/andarilo/">
                     <h1>andarilo.st</h1>
                 </a>
             </div>
@@ -25,7 +25,7 @@ function SecondHeader() {
             </div>
 
             <div className={`Nav ${isActive ? 'active' : ''}`}>
-                <a href="/">Home</a>
+                <a href="https://pablo01dev.github.io/andarilo/">Home</a>
                 <Link to="contact" spy={true} smooth={true} offset={-80} duration={500}>
 
                 <a href="">Contact</a>    
