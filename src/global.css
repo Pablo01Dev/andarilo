@@ -9,7 +9,6 @@
     background-color: var(--fundo-claro);
     align-items: center;
 
-
     --cinza: #dbdbdb;
     --texto:  font-weight: 300;
     --titulo:  font-weight: 500;
@@ -24,6 +23,8 @@
     --border-radius: 10px;
 }
 
+
 body {
     margin: 0;
+    overflow-x: hidden;
 }
