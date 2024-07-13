@@ -1,0 +1,44 @@
+.baseCardProjetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .baseCardProjetos a {
+    text-decoration: none;
+  }
+  
+  .background {
+    margin: 0.5em;
+    width: 18em;
+    height: 10em;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  p {
+    margin: 0 0 1em 2em;
+  }
+  
+  h1 {
+    font-size: 18px;
+    margin-left: 1em;
+    font-weight: 400;
+  }
+  @media (min-width: 1024px) {
+    .baseCard {
+      flex-direction: row;
+      width: 60%;
+    }
+  
+    .background {
+        height: 12em;
+      margin: 0.3em 0.6em;
+    }
+  }
+  

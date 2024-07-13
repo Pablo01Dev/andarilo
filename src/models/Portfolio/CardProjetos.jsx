@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/Card.css';
+import '../../styles/CardProjetos.css';
 
-function Card({ fundo, titulo, page, descricao, onClick }) {
+
+function CardProjetos({ fundo, titulo, descricao, onClick }) {
     const handleClick = () => {
         if (onClick) {
             onClick();
@@ -10,21 +11,20 @@ function Card({ fundo, titulo, page, descricao, onClick }) {
     };
 
     return (
-        <div className="baseCard">
-            <a href={page}>
+        <div className="baseCardProjetos">
+            <a>
                 <div className="background" onClick={handleClick} style={{ backgroundImage: `url(${fundo})` }}>
-                    <p>{titulo}</p>
+                    <h1>{titulo}</h1>
                 </div>
             </a>
         </div>
     );
 }
 
-Card.propTypes = {
+CardProjetos.propTypes = {
     fundo: PropTypes.string.isRequired,
     titulo: PropTypes.string.isRequired,
-    page: PropTypes.string.isRequired,
-    onClick: PropTypes.func, // onClick é opcional
+    onClick: PropTypes.func,
 };
 
-export default Card;
+export default CardProjetos;

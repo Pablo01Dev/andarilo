@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Element } from 'react-scroll';
 import SecondHeader from '../models/SecondHeader';
 import Card from '../models/Card';
@@ -9,39 +7,20 @@ import Projeto1 from '../assets/images/portfolio/image-nali-1.jpg';
 import '../styles/IdentidadeVisual.css';
 import Contact from '../models/Contact';
 import Footer from '../models/Footer';
-
-const imagesSet1 = [
-  'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-  'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-  'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-];
-
-const imagesSet2 = [
-  'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-  'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-  'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-];
-
-const imagesSet3 = [
-  'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-  'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-  'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-];
-
-const imagesSet4 = [
-  'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-  'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-  'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-];
+import { projects } from '../assets/Data/projectData';
 
 Modal.setAppElement('#root');
 
 function IdentidadeVisual() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
+  const [currentTitle, setCurrentTitle] = useState("");
+  const [currentDescription, setCurrentDescription] = useState("");
 
-  const openModal = (images) => {
+  const openModal = (images, title, description) => {
     setCurrentImages(images);
+    setCurrentTitle(title);
+    setCurrentDescription(description);
     setModalIsOpen(true);
   };
 
@@ -56,10 +35,15 @@ function IdentidadeVisual() {
         <div className='Projetos'>
           <p id='titulo'>Identidade Visual</p>
           <div className='CardsProjeto'>
-            <Card fundo={Projeto1} titulo="Identidade Visual" onClick={() => openModal(imagesSet1)} />
-            <Card fundo={Projeto1} titulo="Identidade Visual" onClick={() => openModal(imagesSet2)} />
-            <Card fundo={Projeto1} titulo="Identidade Visual" onClick={() => openModal(imagesSet3)} />
-            <Card fundo={Projeto1} titulo="Identidade Visual" onClick={() => openModal(imagesSet4)} />
+            {projects.map(project => (
+              <Card
+                key={project.id}
+                fundo={Projeto1} // Troque para project.fundo se precisar de imagens diferentes
+                titulo={project.title}
+                descricao={project.description}
+                onClick={() => openModal(project.images, project.title, project.description)}
+              />
+            ))}
           </div>
         </div>
       </div>
@@ -70,18 +54,20 @@ function IdentidadeVisual() {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        contentLabel="Image Carousel Modal"
+        contentLabel="Image Modal"
         className="Modal"
         overlayClassName="Overlay"
       >
         <button onClick={closeModal}>Fechar</button>
-        <Carousel>
+        <h1>{currentTitle}</h1>
+        <div className="image-container">
           {currentImages.map((image, index) => (
-            <div key={index}>
+            <div key={index} className="image-item">
               <img src={image} alt={`Slide ${index}`} />
             </div>
           ))}
-        </Carousel>
+        </div>
+        <p>{currentDescription}</p>
       </Modal>
     </div>
   );
