@@ -4,6 +4,7 @@ html {
     padding: 0;
     width: 100%;
 
+    overflow-x: hidden;
 }
 
 
@@ -130,9 +131,6 @@ html {
 }
 
 @media (max-width: 1023px) {
-    body {
-        overflow-x: unset;
-    }
 
     .Nav {
         position: absolute;
