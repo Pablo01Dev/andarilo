@@ -60,6 +60,10 @@ html {
     color: var(--pre);
 }
 
+.menuIcon {
+    font-size: 20px;
+    border-radius: 8px;
+}
 
 
 .conteinerProjetos {

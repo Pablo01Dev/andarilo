@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../styles/SecondHeader.module.css';
 import { Link } from 'react-scroll';
-import { FiMenu } from "react-icons/fi";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function SecondHeader() {
     const [isActive, setIsActive] = useState(false);
@@ -20,7 +20,7 @@ function SecondHeader() {
 
             <div className={styles.mobileMenu}>
                 <button onClick={toggleNav} type='button'>
-                    <FiMenu />
+                    <GiHamburgerMenu className={styles.menuIcon} />
                 </button>
             </div>
 
@@ -28,7 +28,7 @@ function SecondHeader() {
                 <a href="https://pablo01dev.github.io/andarilo/">Home</a>
                 <Link to="contact" spy={true} smooth={true} offset={-80} duration={500}>
 
-                <a href="">Contact</a>    
+                    <a href="">Contact</a>
                 </Link>
 
             </div>
