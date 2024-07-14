@@ -13,7 +13,7 @@ function Card({ fundo, titulo, page, descricao, onClick }) {
         <div className="baseCard">
             <a href={page}>
                 <div className="background" onClick={handleClick} style={{ backgroundImage: `url(${fundo})` }}>
-                    <p>{titulo}</p>
+                    <h1>{titulo}</h1>
                 </div>
             </a>
         </div>

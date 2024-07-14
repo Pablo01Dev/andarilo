@@ -8,6 +8,11 @@
   text-decoration: none;
 }
 
+.baseCard h1 {
+  font-size: 20px;
+  margin-left: 1em;
+}
+
 .background {
   margin: 0.5em;
   width: 18em;
@@ -21,9 +26,6 @@
   background-position: center;
 }
 
-p {
-  margin: 0 0 1em 2em;
-}
 
 @media (min-width: 1024px) {
   .baseCard {
@@ -32,7 +34,7 @@ p {
   }
 
   .background {
-      height: 12em;
+    height: 12em;
     margin: 0.3em 0.6em;
   }
 }
