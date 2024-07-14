@@ -9,7 +9,7 @@
   animation: fade-in-card 3s forwards;
 }
 
-@keyframes fade-in-card{
+@keyframes fade-in-card {
   from {
     margin-top: 1em;
     opacity: 0
@@ -50,7 +50,7 @@
 
 .fundoTexto {
   position: absolute;
-  bottom: 0;  
+  bottom: 0;
   left: 0;
   right: 0;
   height: 40%;
@@ -97,10 +97,8 @@
 }
 
 @media (max-width: 1023px) {
-  .background {
-    margin-top: 1.3em;
-  }
   .baseCardProjetos {
-    margin-bottom: 4em;
+    margin-bottom: 1.5em;
   }
+
 }
