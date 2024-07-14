@@ -1,10 +1,10 @@
-.baseCardProjetos {
+.baseCard {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .baseCardProjetos a {
+  .baseCard a {
     text-decoration: none;
   }
   
@@ -20,16 +20,15 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  
-  p {
-    margin: 0 0 1em 2em;
-  }
-  
-  h1 {
-    font-size: 18px;
-    margin-left: 1em;
+
+  .background h1 {
     font-weight: 400;
+    margin-left: 1em;
+    font-size: 18px;
   }
+
+
+  
   @media (min-width: 1024px) {
     .baseCard {
       flex-direction: row;

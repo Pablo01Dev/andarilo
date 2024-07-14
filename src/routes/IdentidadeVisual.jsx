@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
-import Modal from 'react-modal';
 import { Element } from 'react-scroll';
 import SecondHeader from '../models/SecondHeader';
-import Card from '../models/Card';
-import Projeto1 from '../assets/images/portfolio/image-nali-1.jpg';
-import '../styles/IdentidadeVisual.css';
+import CardProjetos from '../models/Portfolio/CardProjetos';
 import Contact from '../models/Contact';
 import Footer from '../models/Footer';
-import { projects } from '../assets/Data/projectData';
+import ModalComponent from '../models/Portfolio/ModalComponent'; // Assumindo que ModalComponent está corretamente importado
+import { projects } from '../assets/Data/projectData'; // Importe seus dados de projetos aqui
 
-Modal.setAppElement('#root');
+import '../styles/IdentidadeVisual.css';
 
 function IdentidadeVisual() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -36,9 +34,9 @@ function IdentidadeVisual() {
           <p id='titulo'>Identidade Visual</p>
           <div className='CardsProjeto'>
             {projects.map(project => (
-              <Card
+              <CardProjetos
                 key={project.id}
-                fundo={Projeto1} // Troque para project.fundo se precisar de imagens diferentes
+                fundo={project.fundo} // Aqui você pode ajustar para o fundo correto
                 titulo={project.title}
                 descricao={project.description}
                 onClick={() => openModal(project.images, project.title, project.description)}
@@ -51,24 +49,13 @@ function IdentidadeVisual() {
         <Contact />
       </Element>
       <Footer />
-      <Modal
+      <ModalComponent
         isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="Image Modal"
-        className="Modal"
-        overlayClassName="Overlay"
-      >
-        <button onClick={closeModal}>Fechar</button>
-        <h1>{currentTitle}</h1>
-        <div className="image-container">
-          {currentImages.map((image, index) => (
-            <div key={index} className="image-item">
-              <img src={image} alt={`Slide ${index}`} />
-            </div>
-          ))}
-        </div>
-        <p>{currentDescription}</p>
-      </Modal>
+        closeModal={closeModal}
+        images={currentImages}
+        title={currentTitle}
+        description={currentDescription}
+      />
     </div>
   );
 }
