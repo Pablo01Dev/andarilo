@@ -6,7 +6,6 @@
 
 .baseCardProjetos {
   cursor: pointer;
-
   animation: fade-in-card 3s forwards;
 }
 
@@ -49,45 +48,45 @@
   z-index: 2;
 }
 
-.fundo-texto {
+.fundoTexto {
   position: absolute;
-  bottom: 0;
+  bottom: 0;  
   left: 0;
   right: 0;
   height: 40%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0));
   border-radius: 0 0 10px 10px;
   z-index: 1;
 }
 
 @media (min-width: 1024px) {
-  .baseCard {
+  .baseCardProjetos {
     flex-direction: row;
     width: 60%;
   }
 
-  .ConteinerProjetos {
+  .conteinerProjetos {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
   }
 
-  .Projetos {
+  .projetos {
     flex: 1;
     margin-top: 0;
     text-align: left;
   }
 
-  .CardsProjeto {
+  .cardsProjeto {
     display: flex;
     flex-direction: row;
   }
 
-  .CardsProjeto>* {
+  .cardsProjeto>* {
     margin-right: 1em;
   }
 
-  .CardsProjeto>*:last-child {
+  .cardsProjeto>*:last-child {
     margin-right: 0;
   }
 

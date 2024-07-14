@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Contact.css';
+import styles from '../styles/Contact.module.css';
 import { useInView } from 'react-intersection-observer';
 import { FaBehance, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
@@ -9,22 +9,22 @@ function Contact() {
         threshold: 0.1,
     });
     return (
-        <div className="baseContato">
-                <div ref={ref} className={`contatoContainer ${inView ? 'visible' : ''}`}>
+        <div className={styles.baseContato}>
+               <div ref={ref} className={`${styles.contatoContainer} ${inView ? styles.visible : ''}`}>
                 <h2>Contato</h2>
-                <div className="contactContent">
-                    <div className="orcamento">
+                <div className={styles.contactContent}>
+                    <div className={styles.orcamento}>
                         <p>Quer fazer um<br />orçamento?</p>
                         <a href="https://wa.me/+5521969487301" target="_blank" rel="noopener noreferrer">
                             <button>Solicitar orçamento</button>
                         </a>
                     </div>
 
-                    <div className='info'>
-                        <p className="numero">21 96948-7301</p>
-                        <span className="email">andarilo.st@gmail.com</span>
+                    <div className={styles.info}>
+                        <p className={styles.numero}>21 96948-7301</p>
+                        <span className={styles.email}>andarilo.st@gmail.com</span>
 
-                        <div className='redesSociais'>
+                        <div className={styles.redesSociais}>
                             <a href="https://wa.me/+5521969487301" target="_blank" rel="noopener noreferrer">
                                 <button type='button'><FaWhatsapp /></button>
                             </a>

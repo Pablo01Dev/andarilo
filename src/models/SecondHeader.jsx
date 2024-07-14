@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/SecondHeader.css';
+import styles from '../styles/SecondHeader.module.css';
 import { Link } from 'react-scroll';
 import { FiMenu } from "react-icons/fi";
 
@@ -11,20 +11,20 @@ function SecondHeader() {
     };
 
     return (
-        <div className='HeaderBar'>
-            <div className='Logo'>
+        <div className={styles.headerBar}>
+            <div className={styles.logo}>
                 <a href="https://pablo01dev.github.io/andarilo/">
                     <h1>andarilo.st</h1>
                 </a>
             </div>
 
-            <div className='mobile-menu'>
+            <div className={styles.mobileMenu}>
                 <button onClick={toggleNav} type='button'>
                     <FiMenu />
                 </button>
             </div>
 
-            <div className={`Nav ${isActive ? 'active' : ''}`}>
+            <div className={`${styles.nav} ${isActive ? 'active' : ''}`}>
                 <a href="https://pablo01dev.github.io/andarilo/">Home</a>
                 <Link to="contact" spy={true} smooth={true} offset={-80} duration={500}>
 

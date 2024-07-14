@@ -129,6 +129,7 @@
         margin: 0;
 
     }
+
     .redesSociais {
         width: 1em;
         height: 2em;
@@ -156,7 +157,7 @@
         height: 22.5em;
 
         padding: 2em 0;
-        margin: 0 0 2em;
+        margin: 1.5em 0 2em;
 
         display: flex;
         justify-content: center;
@@ -185,4 +186,13 @@
     .redesSociais button {
         color: var(--cor-fundo);
     }
+}
+
+@media (max-width: 1023px) {
+    .contatoContainer {
+        justify-content: center;
+        margin: 0;
+        width: 20em
+    }
+
 }

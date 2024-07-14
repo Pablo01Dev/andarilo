@@ -1,4 +1,4 @@
-.Modal {
+.modal {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -23,7 +23,7 @@
   z-index: 1000;
 }
 
-.modal-container {
+.modalContainer {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -31,16 +31,16 @@
   padding-bottom: 2em;
 }
 
-.modal-container h1 {
+.modalContainer h1 {
   margin: 4em 0;
 
 }
-.modal-container p {
+.modalContainer p {
   margin: 2em 10em;
 
 }
 
-.modal-button {
+.modalButton {
   position: absolute;
   z-index: 1000;
   top: 3em;
@@ -53,17 +53,17 @@
 
 }
 
-.modal-modal-container p {
+.modalContainer p {
   font-size: 18px;
   font-weight: 300;
 }
 
-.modal-container h1 {
+.modalContainer h1 {
   font-size: 30px;
   font-weight: 500;
 }
 
-.image-modal-container {
+.imageContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +72,7 @@
   gap: 1em;
 }
 
-.image-modal-item {
+.imageItem {
   width: 100%;
   height: auto;
   animation: fade-in-modal 2s forwards;
@@ -90,7 +90,7 @@ keyframes fade-in-modal{
   }
 }
 
-.image-modal-item img {
+.imageItem img {
   max-width: 100%;
   height: 100%;
   margin-bottom: .5em;
@@ -108,18 +108,18 @@ keyframes fade-in-modal{
 
   }
 
-  .image-modal-container {
+  .imageContainer {
     width: 99%;
     gap: 0.1em;
   }
 
-  .modal-button {
+  .modalButton {
     top: 1.5em;
     right: 1.7em;
     padding: .7em;
   }
 
-  .modal-container h1 {
+  .modalContainer h1 {
     margin: 2.3em 0 1em;
   
   }

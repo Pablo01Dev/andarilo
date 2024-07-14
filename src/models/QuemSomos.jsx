@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from 'react-intersection-observer';
 import Image1 from '../assets/images/pablo-guima.png';
-import '../styles/QuemSomos.css';
+import styles from '../styles/QuemSomos.module.css';
 
 function QuemSomos() {
     const { ref, inView } = useInView({
@@ -10,10 +10,10 @@ function QuemSomos() {
     });
 
     return (
-        <div className="Fundo">
-            <div ref={ref} className={`Corpo ${inView ? 'visible' : ''}`}>
+        <div className={styles.fundo}>
+            <div ref={ref} className={`${styles.corpo} ${inView ? styles.visible : ''}`}>
                 <h2>Quem sou?</h2>
-                <div className="personContent">
+                <div className={styles.personContent}>
                     <img src={Image1} alt="pablo-guimarães" />
                     <p>
                         O Andarilho é a personificação de uma característica minha, Pablo Guimarães.<br /><br />

@@ -8,9 +8,11 @@
   text-decoration: none;
 }
 
-.baseCard h1 {
-  font-size: 20px;
+
+.background h1 {
   margin-left: 1em;
+  font-size: 18px;
+  font-weight: 200;
 }
 
 .background {

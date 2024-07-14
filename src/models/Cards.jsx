@@ -4,7 +4,7 @@ import Card from './Card';
 import Image1 from '../assets/images/portfolio/image-nali-1.jpg';
 import Image2 from '../assets/images/portfolio/image-nali-2.jpg';
 import Image3 from '../assets/images/portfolio/image-nali-3.jpg';
-import '../styles/Cards.css';
+import styles from '../styles/Cards.module.css';
 
 function Cards() {
   const { ref, inView } = useInView({
@@ -13,8 +13,8 @@ function Cards() {
   });
 
   return (
-    <div className="portfolio">
-      <div ref={ref} className={`cards ${inView ? 'visible' : ''}`}>
+    <div className={styles.portfolio}>
+       <div ref={ref} className={`${styles.cards} ${inView ? styles.visible : ''}`}>
         <Card fundo={Image1} titulo="Identidade Visual" page="/andarilo/identidade-visual" />
         <Card fundo={Image2} titulo="Website" page="/andarilo/website" />
         <Card fundo={Image3} titulo="Outros" page="/andarilo/outros" />

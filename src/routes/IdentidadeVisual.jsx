@@ -4,10 +4,10 @@ import SecondHeader from '../models/SecondHeader';
 import CardProjetos from '../models/Portfolio/CardProjetos';
 import Contact from '../models/Contact';
 import Footer from '../models/Footer';
-import ModalComponent from '../models/Portfolio/ModalComponent'; 
-import { projects } from '../assets/Data/projectData'; 
+import ModalComponent from '../models/Portfolio/ModalComponent';
+import { projects } from '../assets/Data/projectData';
 
-import '../styles/IdentidadeVisual.css';
+import styles from '../styles/IdentidadeVisual.module.css';
 
 function IdentidadeVisual() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -29,15 +29,16 @@ function IdentidadeVisual() {
   return (
     <div>
       <SecondHeader />
-      <div className='ConteinerProjetos'>
-        <div className='Projetos'>
-          <p id='titulo'>Identidade Visual</p>
-          <div className='CardsProjeto'>
+      <div className={styles.conteinerProjetos}>
+        <div className={styles.projetos}>
+          <p>Identidade Visual</p>
+          <div className={styles.cardProjetos}>
             {projects.map(project => (
               <CardProjetos
                 key={project.id}
-                fundo={project.fundo} 
+                fundo={project.fundo}
                 titulo={project.title}
+                className={styles.cardProjetos}
                 descricao={project.description}
                 onClick={() => openModal(project.images, project.title, project.description)}
               />

@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
-import '../../styles/ModalComponent.css'; // Importe seu arquivo de estilos para o modal, se houver
+import styles from '../../styles/ModalComponent.module.css';
 
 function ModalComponent({ isOpen, closeModal, images, title, description }) {
   return (
@@ -8,16 +8,16 @@ function ModalComponent({ isOpen, closeModal, images, title, description }) {
       isOpen={isOpen}
       onRequestClose={closeModal}
       contentLabel="Detalhes do Projeto"
-      className="Modal"
+      className={styles.modal}
       overlayClassName="Overlay"
     >
 
-      <div className="modal-container">
-        <button className='modal-button' onClick={closeModal}>Fechar</button>
+      <div className={styles.modalContainer}>
+        <button className={styles.modalButton} onClick={closeModal}>Fechar</button>
         <h1>{title}</h1>
-        <div className="image-modal-container">
+        <div className={styles.imageContainer}>
           {images.map((image, index) => (
-            <div key={index} className="image-modal-item">
+            <div key={index} className={styles.imageItem}>
               <img src={image} alt={`Slide ${index}`} />
             </div>
           ))}

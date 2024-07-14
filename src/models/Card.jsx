@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/Card.css';
+import styles from '../styles/Card.module.css';
 
-function Card({ fundo, titulo, page, descricao, onClick }) {
+function Card({ fundo, titulo, page, onClick }) {
     const handleClick = () => {
         if (onClick) {
             onClick();
@@ -10,9 +10,9 @@ function Card({ fundo, titulo, page, descricao, onClick }) {
     };
 
     return (
-        <div className="baseCard">
+        <div className={styles.baseCard}>
             <a href={page}>
-                <div className="background" onClick={handleClick} style={{ backgroundImage: `url(${fundo})` }}>
+                <div className={styles.background} onClick={handleClick} style={{ backgroundImage: `url(${fundo})` }}>
                     <h1>{titulo}</h1>
                 </div>
             </a>

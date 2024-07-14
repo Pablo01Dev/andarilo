@@ -1,11 +1,11 @@
 
-.Fundo {
+.fundo {
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.Corpo {
+.corpo {
     width: 20.5em;
     height: 46em;
     margin: 0em auto;
@@ -25,12 +25,12 @@
     transition: opacity 1.2s, transform 2s;
 }
 
-.Corpo.visible {
+.corpo.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-.Corpo h2 {
+.corpo h2 {
     color: var(--fundo-claro);
     font-weight: 300;
     font-size: 1.7em;
@@ -68,17 +68,18 @@
         margin: 2em auto;
     }
 
-    .Corpo {
+    .corpo {
         padding: 4em 0 1em 0;
         flex-direction: column;
         width: 70%;
+        margin-top: 1.5em;
         height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .Corpo h2 {
+    .corpo h2 {
         font-size: 1.7em;
         font-weight: 300;
         margin: .5em 0 2em;

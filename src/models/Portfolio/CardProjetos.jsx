@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../../styles/CardProjetos.css';
+import styles from '../../styles/CardProjetos.module.css';
 
 
 function CardProjetos({ fundo, titulo, descricao, onClick }) {
@@ -11,12 +11,12 @@ function CardProjetos({ fundo, titulo, descricao, onClick }) {
     };
 
     return (
-        <div className="baseCardProjetos">
+        <div className={styles.baseCardProjetos}>
             <a>
-                <div className="background" onClick={handleClick} style={{ backgroundImage: `url(${fundo})` }}>
-                    <div className="fundo-texto"></div>
+                <div className={styles.background} onClick={handleClick} style={{ backgroundImage: `url(${fundo})` }}>
+                    <div className={styles.fundoTexto}></div>
                     <h1>{titulo}</h1>
-                </div>
+                </div>  
             </a>
         </div>
 
