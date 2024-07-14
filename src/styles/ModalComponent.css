@@ -78,3 +78,20 @@
   border-radius: 10px;
 }
 
+@media (max-width: 1023px) {
+
+  .Modal {
+    position: relative;
+    max-width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-64%, -50%);
+  
+  }
+
+  .image-modal-container {
+    width: 90%;
+   
+  }
+  
+}
