@@ -131,7 +131,7 @@ html {
 
 @media (max-width: 1023px) {
     body {
-        overflow-x: hidden;
+        overflow-x: unset;
     }
 
     .Nav {
