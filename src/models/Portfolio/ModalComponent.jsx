@@ -11,7 +11,7 @@ function ModalComponent({ isOpen, closeModal, images, title, description }) {
       className="Modal"
       overlayClassName="Overlay"
     >
-      <button onClick={closeModal}>Fechar</button>
+      <button className='modal-button' onClick={closeModal}>Fechar</button>
       <div className="modal-container">
        
         <h1>{title}</h1>

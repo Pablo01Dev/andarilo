@@ -36,7 +36,7 @@
 
 }
 
-button {
+.modal-button {
   position: fixed;
   top: 3em;
   right: 3em;
@@ -45,6 +45,16 @@ button {
   border-radius: 4px;
   padding: 1em;
   cursor: pointer;
+}
+
+.modal-container p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.modal-container h1 {
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .image-container {
@@ -69,22 +79,21 @@ button {
 }
 
 ::-webkit-scrollbar {
-  width: 10px; /* largura da scrollbar */
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* cor do fundo da scrollbar */
+  background-color: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #888; /* cor do indicador de rolagem */
-  border-radius: 5px; /* arredondamento das bordas do indicador */
-}
+  background-color: #888;
+  border-radius: 5px;
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* cor do indicador de rolagem ao passar o mouse */
-}
-
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
 
 
-@media (min-width: 1024px) {}
+
+  @media (min-width: 1024px) {}
