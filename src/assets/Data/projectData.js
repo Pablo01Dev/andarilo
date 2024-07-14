@@ -22,11 +22,15 @@ export const projects = [
     id: 2,
     title: 'Leo',
     images: [
-      'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-      'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
-      'https://as1.ftcdn.net/v2/jpg/00/92/53/56/1000_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
+      'https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/portfolio/projetos/Leo/Leo-1.jpg',
+      'https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/portfolio/projetos/Leo/Leo-2.jpg',
+      'https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/portfolio/projetos/Leo/Leo-3.jpg',
+      'https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/portfolio/projetos/Leo/Leo-4.jpg',
+      'https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/portfolio/projetos/Leo/Leo-5.jpg',
+      'https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/portfolio/projetos/Leo/Leo-6.jpg',
+      
     ],
-    description: 'Description for Identidade Visual 2',
+    description: 'Esse foi um redesign de um logotipo de um parceiro do qual fez um excelente trabalho de marcenaria, e para retribuir a competência e cuidado com trabalho que foi entregue, resolvi presenteá-lo com esse redesign.',
   },
   {
     id: 3,
