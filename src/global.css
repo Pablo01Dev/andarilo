@@ -8,6 +8,7 @@
     font-family: Basic;
     background-color: var(--fundo-claro);
     align-items: center;
+    overflow-x: unset;
 
     --cinza: #dbdbdb;
     --texto:  font-weight: 300;

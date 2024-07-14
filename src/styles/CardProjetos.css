@@ -1,43 +1,67 @@
 .baseCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.baseCard a {
+  text-decoration: none;
+}
+
+.background {
+  margin: 0.5em;
+  width: 18em;
+  height: 10em;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.background h1 {
+  font-weight: 400;
+  margin-left: 1em;
+  font-size: 18px;
+}
+
+
+
+@media (min-width: 1024px) {
+  .baseCard {
+    flex-direction: row;
+    width: 60%;
+  }
+
+  .ConteinerProjetos {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .Projetos {
+    flex: 1;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .CardsProjeto {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
   }
-  
-  .baseCard a {
-    text-decoration: none;
+
+  .CardsProjeto>* {
+    margin-right: 1em;
   }
-  
+
+  .CardsProjeto>*:last-child {
+    margin-right: 0;
+  }
+
   .background {
-    margin: 0.5em;
-    width: 18em;
-    height: 10em;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    display: flex;
-    align-items: flex-end;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 12em;
+    margin: 0.3em 0.6em;
   }
-
-  .background h1 {
-    font-weight: 400;
-    margin-left: 1em;
-    font-size: 18px;
-  }
-
-
-  
-  @media (min-width: 1024px) {
-    .baseCard {
-      flex-direction: row;
-      width: 60%;
-    }
-  
-    .background {
-        height: 12em;
-      margin: 0.3em 0.6em;
-    }
-  }
-  
+}

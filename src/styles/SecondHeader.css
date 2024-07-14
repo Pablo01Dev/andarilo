@@ -81,30 +81,7 @@ html {
 }
 
 @media (min-width: 1024px) {
-    .ConteinerProjetos {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
 
-    .Projetos {
-        flex: 1;
-        margin-top: 0;
-        text-align: left;
-    }
-
-    .CardsProjeto {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .CardsProjeto>* {
-        margin-right: 1em;
-    }
-
-    .CardsProjeto>*:last-child {
-        margin-right: 0;
-    }
 
     .Logo {
         margin-left: 10em;
@@ -144,13 +121,11 @@ html {
         justify-content: space-around;
         border-radius: 0 0 0 5px;
         flex-direction: column;
-        transform: translateX(100%);
         opacity: 0;
         transition: transform .3s ease-in, opacity .5s ease-in;
     }
 
     .Nav.active {
-        transform: translateX(0%);
         opacity: 1;
     }
 }
