@@ -4,8 +4,8 @@ import SecondHeader from '../models/SecondHeader';
 import CardProjetos from '../models/Portfolio/CardProjetos';
 import Contact from '../models/Contact';
 import Footer from '../models/Footer';
-import ModalComponent from '../models/Portfolio/ModalComponent'; // Assumindo que ModalComponent está corretamente importado
-import { projects } from '../assets/Data/projectData'; // Importe seus dados de projetos aqui
+import ModalComponent from '../models/Portfolio/ModalComponent'; 
+import { projects } from '../assets/Data/projectData'; 
 
 import '../styles/IdentidadeVisual.css';
 
@@ -36,7 +36,7 @@ function IdentidadeVisual() {
             {projects.map(project => (
               <CardProjetos
                 key={project.id}
-                fundo={project.fundo} // Aqui você pode ajustar para o fundo correto
+                fundo={project.fundo} 
                 titulo={project.title}
                 descricao={project.description}
                 onClick={() => openModal(project.images, project.title, project.description)}

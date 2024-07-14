@@ -14,10 +14,12 @@ function CardProjetos({ fundo, titulo, descricao, onClick }) {
         <div className="baseCardProjetos">
             <a>
                 <div className="background" onClick={handleClick} style={{ backgroundImage: `url(${fundo})` }}>
+                    <div className="fundo-texto"></div>
                     <h1>{titulo}</h1>
                 </div>
             </a>
         </div>
+
     );
 }
 

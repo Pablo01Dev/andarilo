@@ -75,6 +75,19 @@
 .image-modal-item {
   width: 100%;
   height: auto;
+  animation: fade-in 2s forwards;
+}
+
+keyframes fade-in{
+  from {
+    margin-top: 1em;
+    opacity: 0
+  }
+
+  to {
+    margin-top: 0;
+    opacity: 1
+  }
 }
 
 .image-modal-item img {
@@ -88,16 +101,16 @@
 
   .Modal {
     position: relative;
-    max-width: 70%;
+    max-width: 76%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-52%, -50%);
 
   }
 
   .image-modal-container {
-    width: 90%;
-
+    width: 99%;
+    gap: 0.1em;
   }
 
   .modal-button {
@@ -105,4 +118,10 @@
     right: 1.7em;
     padding: .7em;
   }
+
+  .modal-container h1 {
+    margin: 2.3em 0 1em;
+  
+  }
+
 }

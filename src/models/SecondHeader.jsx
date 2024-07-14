@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/SecondHeader.css';
 import { Link } from 'react-scroll';
-import { FaHamburger } from "react-icons/fa";
+import { FiMenu } from "react-icons/fi";
 
 function SecondHeader() {
     const [isActive, setIsActive] = useState(false);
@@ -20,7 +20,7 @@ function SecondHeader() {
 
             <div className='mobile-menu'>
                 <button onClick={toggleNav} type='button'>
-                    <FaHamburger />
+                    <FiMenu />
                 </button>
             </div>
 
