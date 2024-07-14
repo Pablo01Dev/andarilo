@@ -1,4 +1,4 @@
-footer {
+.footer {
   width: 100%;
   display: flex;
   align-items: center;
@@ -7,7 +7,7 @@ footer {
 
 }
 
-footer p {
+.footer p {
   margin: 2em 0;
   
 }

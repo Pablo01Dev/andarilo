@@ -4,7 +4,7 @@ import styles from '../styles/Footer.module.css';
 function Footer() {
     return (
 
-        <footer>
+        <footer className={styles.footer}>
             <p>Desenvolvido por Andarilo Studio</p>
         </footer>
     );
