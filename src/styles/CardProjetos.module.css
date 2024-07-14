@@ -28,8 +28,8 @@
 
 .background {
   margin: 0.5em;
-  width: 18em;
-  height: 10em;
+  width: 20em;
+  height: 12em;
   color: rgb(255, 255, 255);
   border-radius: 10px;
   display: flex;
@@ -93,5 +93,14 @@
   .background {
     height: 12em;
     margin: 0.3em 0.6em;
+  }
+}
+
+@media (max-width: 1023px) {
+  .background {
+    margin-top: 1.3em;
+  }
+  .baseCardProjetos {
+    margin-bottom: 4em;
   }
 }

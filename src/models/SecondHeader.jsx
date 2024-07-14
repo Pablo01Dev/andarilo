@@ -24,7 +24,7 @@ function SecondHeader() {
                 </button>
             </div>
 
-            <div className={`${styles.nav} ${isActive ? 'active' : ''}`}>
+            <div className={`${styles.nav} ${isActive ? styles.active : ''}`}>
                 <a href="https://pablo01dev.github.io/andarilo/">Home</a>
                 <Link to="contact" spy={true} smooth={true} offset={-80} duration={500}>
 
