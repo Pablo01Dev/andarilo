@@ -103,9 +103,9 @@
 @media (max-width: 1023px) {
   .modal {
     position: relative;
-    max-width: 76%;
+    max-width: 80%;
     top: 54%;
-    left: 50%;
+    left: 52.2%;
     transform: translate(-52%, -50%);
   }
 
@@ -116,7 +116,7 @@
 
   .modalButton {
     top: 2em;
-    right: 2em;
+    right: 1.1em;
     padding: .7em;
   }
 
