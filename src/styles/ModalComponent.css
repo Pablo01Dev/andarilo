@@ -75,10 +75,10 @@
 .image-modal-item {
   width: 100%;
   height: auto;
-  animation: fade-in 2s forwards;
+  animation: fade-in-modal 2s forwards;
 }
 
-keyframes fade-in{
+keyframes fade-in-modal{
   from {
     margin-top: 1em;
     opacity: 0
