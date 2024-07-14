@@ -32,7 +32,11 @@
 }
 
 .modal-container h1 {
-  margin-top: 2em;
+  margin: 4em 0;
+
+}
+.modal-container p {
+  margin: 2em 10em;
 
 }
 
