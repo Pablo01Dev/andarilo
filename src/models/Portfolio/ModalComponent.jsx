@@ -11,9 +11,9 @@ function ModalComponent({ isOpen, closeModal, images, title, description }) {
       className="Modal"
       overlayClassName="Overlay"
     >
-      <button className='modal-button' onClick={closeModal}>Fechar</button>
+
       <div className="modal-container">
-       
+        <button className='modal-button' onClick={closeModal}>Fechar</button>
         <h1>{title}</h1>
         <div className="image-modal-container">
           {images.map((image, index) => (
