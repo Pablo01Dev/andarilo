@@ -15,9 +15,9 @@ function ModalComponent({ isOpen, closeModal, images, title, description }) {
       <div className="modal-container">
        
         <h1>{title}</h1>
-        <div className="image-container">
+        <div className="image-modal-container">
           {images.map((image, index) => (
-            <div key={index} className="image-item">
+            <div key={index} className="image-modal-item">
               <img src={image} alt={`Slide ${index}`} />
             </div>
           ))}

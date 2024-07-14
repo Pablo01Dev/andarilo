@@ -47,7 +47,7 @@
   cursor: pointer;
 }
 
-.modal-container p {
+.modal-modal-container p {
   font-size: 18px;
   font-weight: 300;
 }
@@ -57,7 +57,7 @@
   font-weight: 500;
 }
 
-.image-container {
+.image-modal-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,12 +66,12 @@
   gap: 1em;
 }
 
-.image-item {
+.image-modal-item {
   width: 100%;
   height: auto;
 }
 
-.image-item img {
+.image-modal-item img {
   max-width: 100%;
   height: 100%;
   margin-bottom: .5em;
