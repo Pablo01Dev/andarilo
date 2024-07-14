@@ -123,4 +123,9 @@
   .modalContainer h1 {
     margin: 1em 0 1em;
   }
+
+  .modalContainer p {
+    margin: .7em;
+    font-size: 15px;
+  }
 }
