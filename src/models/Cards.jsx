@@ -15,9 +15,9 @@ function Cards() {
   return (
     <div className={styles.portfolio}>
        <div ref={ref} className={`${styles.cards} ${inView ? styles.visible : ''}`}>
-        <Card fundo={Image1} titulo="Identidade Visual" page="/andarilo/identidade-visual" />
-        <Card fundo={Image2} titulo="Website" page="/andarilo/website" />
-        <Card fundo={Image3} titulo="Outros" page="/andarilo/outros" />
+        <Card fundo={Image1} titulo="Identidade Visual" page="/identidade-visual" />
+        <Card fundo={Image2} titulo="Website" page="/website" />
+        <Card fundo={Image3} titulo="Outros" page="/outros" />
       </div>
     </div>
   );
