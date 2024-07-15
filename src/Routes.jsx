@@ -10,10 +10,10 @@ function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/andarilo" element={<Home />} />
-                <Route path="/andarilo/identidade-visual" element={<IdentidadeVisual />} />
-                <Route path="/andarilo/website" element={<Website />} />
-                <Route path="/andarilo/outros" element={<Outros />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/identidade-visual" element={<IdentidadeVisual />} />
+                <Route path="/website" element={<Website />} />
+                <Route path="/outros" element={<Outros />} />
                 <Route path="*" element={<p>Not Found</p>} />
             </Routes>
         </BrowserRouter>
