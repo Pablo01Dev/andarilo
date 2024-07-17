@@ -13,7 +13,7 @@ function SecondHeader() {
     return (
         <div className={styles.headerBar}>
             <div className={styles.logo}>
-                <a href="https://pablo01dev.github.io/andarilo/">
+                <a href="/">
                     <h1>andarilo.st</h1>
                 </a>
             </div>
