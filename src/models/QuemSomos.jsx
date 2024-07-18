@@ -20,7 +20,7 @@ function QuemSomos() {
                         <br/>
                         Representa a essência do constante caminhar entre ideias, desejos, caminhos e paixões que guia cada projeto.<br />
                         <br/>
-                        No Andarilho, cada criação é uma jornada única, uma oportunidade de expressar uma visão de forma técnica e artística.<br />
+                        No Andarilo, cada criação é uma jornada única, uma oportunidade de expressar uma visão de forma técnica e artística.<br />
                         <br/>
                         Cada projeto é tratado como uma trilha exploratória, onde cada passo é dado com intenção e paixão.<br />
                         <br/>
