@@ -5,6 +5,7 @@ import Home from './routes/Home';
 import IdentidadeVisual from './routes/IdentidadeVisual';
 import Website from './routes/Website';
 import Outros from './routes/Outros';
+import Agradecimento from './routes/Agradecimento';
 
 function AppRoutes() {
     return (
@@ -14,6 +15,7 @@ function AppRoutes() {
                 <Route path="/identidade-visual" element={<IdentidadeVisual />} />
                 <Route path="/website" element={<Website />} />
                 <Route path="/outros" element={<Outros />} />
+                <Route path="/agradecimento" element={<Agradecimento />} />
                 <Route path="*" element={<p>Not Found</p>} />
             </Routes>
         </BrowserRouter>
