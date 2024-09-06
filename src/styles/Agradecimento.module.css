@@ -1,0 +1,88 @@
+/* Estilos para o componente Agradecimento */
+.container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 50px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topImage {
+    max-width: 150px;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .bottomImage {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  /* Iframe container */
+  .iframeContainer {
+    margin-top: 30px;
+    width: 100%;
+    height: 600px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5em 0;
+  }
+  
+  .iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Animação de flutuação para o confete */
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-10px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .message {
+      font-size: 1rem;
+    }
+  
+    .topImage, .bottomImage {
+      max-width: 120px;
+    }
+  
+    .iframeContainer {
+      height: 400px;
+    }
+  }
+  
