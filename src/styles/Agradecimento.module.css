@@ -43,6 +43,7 @@
   overflow: hidden;
   transform: scale(0.8); /* Zoom out */
   transform-origin: 0 0; /* Mantém a origem no canto superior esquerdo */
+  margin: 0 auto; /* Centraliza o iframe na página */
 }
 
 .iframe {
@@ -51,6 +52,7 @@
   border: none;
 }
 
+/* Animação de flutuação */
 @keyframes float {
   0% {
     transform: translatey(0px);
@@ -63,6 +65,7 @@
   }
 }
 
+/* Estilos para dispositivos móveis */
 @media (max-width: 600px) {
   .container {
     padding: 15px;
@@ -81,6 +84,13 @@
   }
 
   .iframeContainer {
-    height: 400px;
+    height: 400px; /* Ajusta a altura no mobile */
+    transform: scale(0.7); /* Reduz o zoom no mobile */
+    transform-origin: center; /* Centraliza o iframe no mobile */
+  }
+
+  .iframe {
+    width: 150%; /* Aumenta a largura do iframe para compensar o zoom no mobile */
+    height: 150%; /* Aumenta a altura */
   }
 }
