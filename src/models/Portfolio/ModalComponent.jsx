@@ -14,7 +14,7 @@ function ModalComponent({ isOpen, closeModal, images, title, link, description }
     >
       <div className={styles.modalContainer}>
         <h1>{title}</h1>
-        <a href={link}>{link}</a>
+        <a href={link} target='_blank'>{link}</a>
         <div className={styles.imageContainer}>
           {images.length > 0 ? (
             images.map((image, index) => (
