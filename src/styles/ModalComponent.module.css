@@ -46,7 +46,7 @@
 }
 
 .modalContainer h1 {
-  margin: 4em 0;
+  margin: 2em 0 1em;
 }
 
 .modalContainer p {
@@ -58,6 +58,13 @@
 
 .modalContainer p {
   font-size: 18px;
+  font-weight: 300;
+}
+
+
+.modalContainer a {
+  font-size: 24px;
+  margin-bottom: 2em;
   font-weight: 300;
 }
 
