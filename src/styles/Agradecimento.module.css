@@ -30,6 +30,8 @@
 
 .lookimage {
 margin-top: 1em;
+max-width: 200px;
+margin-bottom: 20px;
 }
 
 .bottomImage {
@@ -83,18 +85,7 @@ margin-top: 1em;
     font-size: 1rem;
   }
 
-  .topImage, .bottomImage {
+  .topImage, .bottomImage .lookimage{
     max-width: 120px;
-  }
-
-  .iframeContainer {
-    height: 400px; /* Ajusta a altura no mobile */
-    transform: scale(0.7); /* Reduz o zoom no mobile */
-    transform-origin: center; /* Centraliza o iframe no mobile */
-  }
-
-  .iframe {
-    width: 150%; /* Aumenta a largura do iframe para compensar o zoom no mobile */
-    height: 150%; /* Aumenta a altura */
   }
 }
