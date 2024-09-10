@@ -18,13 +18,13 @@ const Agradecimento = () => {
             <img 
                 src="https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/acompanhamento.png" 
                 alt="Parceria de sucesso" 
-                className={styles.bottomImage} 
+                className={styles.lookImage} 
             />
 
 
             <p className={styles.message}>
-                Será feito um acompanhamento durante um perído de 3 meses,<br/> 
-                garantindo que o funcionamento do website não seja interrompido.<br/>
+                Será feito um acompanhamento durante um perído de 3 meses,
+                garantindo que o funcionamento do website não seja interrompido.<br/><br/>
                 Estaremos disponíveis também para alterações e atualizações. 
             </p>
 
