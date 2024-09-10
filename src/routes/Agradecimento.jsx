@@ -26,15 +26,11 @@ const Agradecimento = () => {
                 Contem sempre conosco!
             </p>
 
-            {/* Iframe para emular o site */}
-            <div className={styles.iframeContainer}>
-                <iframe 
-                    src="https://enjoydrink.com.br/" 
-                    title="Emulação do site Enjoy Drink" 
-                    className={styles.iframe}
-                    allowFullScreen
-                ></iframe>
-            </div>
+            <img 
+                src="https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/enjoy-projeto.png" 
+                alt="enjoydrinks" 
+                className={styles.bottomImage} 
+            />
         </div>
     );
 };
