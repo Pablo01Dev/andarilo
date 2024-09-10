@@ -21,6 +21,14 @@ const Agradecimento = () => {
                 className={styles.bottomImage} 
             />
 
+
+            <p className={styles.message}>
+                Será feito um acompanhamento durante um perído de 3 meses, 
+                garantindo que o funcionamento do website não seja interrompido.
+
+                Estaremos disponíveis também para alterações e atualizações. 
+            </p>
+
             <p className={styles.message}>
                 Esperamos continuar essa parceria e contribuir para o sucesso de vocês.<br />
                 Contem sempre conosco!
