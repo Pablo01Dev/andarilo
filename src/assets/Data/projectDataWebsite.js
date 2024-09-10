@@ -4,8 +4,8 @@ export const projects = [
   {
     id: 1,
     title: 'Enjoy Drinks',
-    fundo: 'https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/portfolio/projetos/Nali/nali-4.jpg',
-    images: ['https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/portfolio/projetos/Nali/nali-1.jpg'],
+    fundo: 'https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/enjoy-capa.png',
+    images: ['https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/enjoy-projeto.png'],
     link: 'https://enjoydrink.com.br/',
     description: '',
   },
