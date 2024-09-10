@@ -11,8 +11,8 @@ const Agradecimento = () => {
             />
             <h1 className={styles.title}>Obrigado pela Parceria!</h1>
             <p className={styles.message}>
-                Agradecemos imensamente pela oportunidade de trabalhar com vocês.<br /> 
-                Foi um prazer desenvolver este projeto juntos!
+                Agradecemos imensamente pela oportunidade de trabalhar com vocês.<br/><br/> 
+                Foi um prazer desenvolver o website da Enjoy!
             </p>
 
             <img 
@@ -38,12 +38,6 @@ const Agradecimento = () => {
                 Esperamos continuar essa parceria e contribuir para o sucesso de vocês.<br />
                 Contem sempre conosco!
             </p>
-
-            <img 
-                src="https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/enjoy-projeto.png" 
-                alt="enjoydrinks" 
-                className={styles.bottomImage} 
-            />
         </div>
     );
 };
