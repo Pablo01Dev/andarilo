@@ -95,13 +95,14 @@ animation: float 8s ease-in-out infinite;
 
   .message {
     font-size: 1rem;
+    margin: 1em 2em;
   }
 
   .topImage, .bottomImage .lookimage{
-    max-width: 120px;
+    max-width: 100px;
   }
 
   .projectImage {
-    max-width: 200px;
+    max-width: 160px;
   }
 }
