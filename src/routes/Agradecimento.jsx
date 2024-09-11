@@ -11,14 +11,25 @@ const Agradecimento = () => {
             />
             <h1 className={styles.title}>Obrigado pela Parceria!</h1>
             <p className={styles.message}>
-                Agradecemos imensamente pela oportunidade de trabalhar com vocês.<br /> 
-                Foi um prazer desenvolver este projeto juntos!
+                Agradecemos imensamente pela oportunidade de trabalhar com vocês.
+                Foi um prazer desenvolver o website da Enjoy!
+            </p>
+
+            <img
+                src="https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/observer.png"
+                alt="Parceria de sucesso"
+                className={styles.lookimage}
+            />
+
+            <p className={styles.message}>
+                Vamos acompanhar o website durante 3 meses para garantir que o funcionamento não seja interrompido,
+         e durante esse período estaremos à disposição para realizar atualizações e ajustes necessários.
             </p>
 
             <img
                 src="https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/parceria.png"
                 alt="Parceria de sucesso"
-                className={styles.bottomImage}  
+                className={styles.bottomImage}
             />
 
             <p className={styles.message}>
@@ -26,15 +37,13 @@ const Agradecimento = () => {
                 Contem sempre conosco!
             </p>
 
-            {/* Iframe para emular o site */}
-            <div className={styles.iframeContainer}>
-                <iframe 
-                    src="https://enjoydrink.com.br/" 
-                    title="Emulação do site Enjoy Drink" 
-                    className={styles.iframe}
-                    allowFullScreen
-                ></iframe>
-            </div>
+            <img
+                src="https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/enjoy-projeto.png"
+                alt="Parceria de sucesso"
+                className={styles.projetoImage}
+            />
+
+            <a href="https://www.andarilo.com.br/" className={styles.link}>www.andarilo.com.br</a>
         </div>
     );
 };
