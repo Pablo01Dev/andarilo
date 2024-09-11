@@ -3,6 +3,8 @@
   text-align: center;
   margin: 50px auto;
   padding: 20px;
+  padding-top: 4em;
+  padding: 5em;
   max-width: 800px;
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -46,11 +48,6 @@
   margin: 0 auto; /* Centraliza o iframe na página */
 }
 
-.iframe {
-  width: 125%; /* Aumenta a largura para compensar o zoom */
-  height: 125%; /* Aumenta a altura para compensar o zoom */
-  border: none;
-}
 
 /* Animação de flutuação */
 @keyframes float {
@@ -83,14 +80,4 @@
     max-width: 120px;
   }
 
-  .iframeContainer {
-    height: 400px; /* Ajusta a altura no mobile */
-    transform: scale(0.7); /* Reduz o zoom no mobile */
-    transform-origin: center; /* Centraliza o iframe no mobile */
-  }
-
-  .iframe {
-    width: 150%; /* Aumenta a largura do iframe para compensar o zoom no mobile */
-    height: 150%; /* Aumenta a altura */
-  }
 }
