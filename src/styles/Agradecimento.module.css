@@ -30,6 +30,12 @@
   margin-bottom: 30px;
 }
 
+.lookimage {
+margin-top: 1em;
+max-width: 200px;
+margin-bottom: 20px;
+}
+
 .bottomImage {
   max-width: 200px;
   margin-bottom: 20px;
@@ -76,8 +82,7 @@
     font-size: 1rem;
   }
 
-  .topImage, .bottomImage {
+  .topImage, .bottomImage .lookimage{
     max-width: 120px;
   }
-
 }
