@@ -86,11 +86,12 @@ animation: float 8s ease-in-out infinite;
 /* Estilos para dispositivos móveis */
 @media (max-width: 600px) {
   .container {
-    padding: 15px;
+    padding: 2em;
   }
 
   .title {
     font-size: 2rem;
+
   }
 
   .message {
@@ -103,6 +104,6 @@ animation: float 8s ease-in-out infinite;
   }
 
   .projectImage {
-    max-width: 160px;
+    max-width: 4px;
   }
 }
