@@ -13,7 +13,7 @@ export const projects = [
     id: 2,
     title: 'New Open Bar',
     fundo: 'https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/new-open.jpg',
-    images: ['https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/portfolio/projetos/Nali/nali-1.jpg'],
+    images: ['https://raw.githubusercontent.com/Pablo01Dev/andarilo/main/src/assets/images/new-open-projeto.png'],
     link: 'https://newopenbar.com.br/',
     description: '',
   },
